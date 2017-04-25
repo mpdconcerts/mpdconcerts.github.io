@@ -1,0 +1,41 @@
+body {
+	font-family: Georgia, serif;
+	margin-top: 2em;
+	margin-left:2em;
+	margin-right:2em;
+}
+
+div {
+	margin-top: 3em;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+#patrons {
+	letter-spacing: 0.2em;
+}
+
+#contact-address {
+	background-color: #c1e7ff;
+	padding: 5%;
+}
+
+.concert-date {
+	margin-bottom: -10px;
+}
+
+.concert-name {
+	text-decoration: underline;
+	letter-spacing: 0.2em;
+}
+
+.concert-description {
+	margin-bottom: 10%;
+}
+
+#footer {
+    background-color: #c1e7ff;
+    padding: 5%;
+}
