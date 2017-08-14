@@ -13,6 +13,11 @@ p {
 	line-height: 1.6em;
 }
 
+td {
+	padding-right: 1em;
+	vertical-align: top;
+}
+
 #patrons {
 	letter-spacing: 0.2em;
 }
