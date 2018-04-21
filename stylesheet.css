@@ -1,36 +1,109 @@
 body {
-	font-family: Georgia, serif;
-	margin-top: 2em;
-	margin-left:2em;
-	margin-right:2em;
+	background-color: #AEB6BF;
 }
 
-div {
-	margin-top: 3em;
+.row {
+	margin-bottom: 1em;
 }
+
+h3 {
+	color: #ffffff;
+	letter-spacing: 0.3em;
+	overflow-wrap: break-word;
+	margin-bottom: 1em;
+}
+
+h5 {
+	padding: 2em;
+}
+
+/* p styles */
 
 p {
 	line-height: 1.6em;
-}
-
-td {
-	padding-right: 1em;
-	vertical-align: top;
-}
-
-li {
-	list-style: none;
-	font-weight: bold;
 }
 
 #patrons {
 	letter-spacing: 0.2em;
 }
 
-#contact-address {
-	background-color: #c1e7ff;
-	padding: 5%;
+
+li {
+	list-style: none;
+	font-weight: bold;
 }
+
+.navbar {
+	background-color: rgba(211, 209, 104, 0.3);
+}
+
+/* HOVER elements */
+
+a {
+    color: #000000;
+}
+
+a:hover, a:active, a:focus {
+    color: #000000;
+    text-transform: lowercase;
+}
+
+/* Icons */
+
+.glyph-icon {
+	width:16px;
+	height:16px;
+}
+
+/* Homepage Boxes */
+
+#tangerine {
+	background-color: rgba(225, 150, 0, 0.7);
+	margin-top: 3.5em;
+	margin-bottom: 2em;
+}
+
+#grape {
+	background-color: rgba(161, 126, 176, 0.5);
+}
+
+#lime {
+	background-color: rgba(255, 251, 0, 0.5);
+	margin-top: -1em;
+}
+
+#footer {
+	margin-bottom: -1em;
+}
+
+/* Images */
+
+#logo {
+	padding: 1em;
+}
+
+#banner-photo-1 {
+	background-image: url(https://www.mediafire.com/convkey/a9f6/4elewi8hws636mc6g.jpg);
+	background-size: cover;
+	opacity: 0.7;
+	height: 400px;
+}
+
+#banner-photo-2 {
+	background-image: url(https://www.mediafire.com/convkey/8f8f/ikmbw025pjs9ml36g.jpg);
+	background-size: cover;
+	opacity: 0.7;
+	height: 400px;
+}
+
+#banner-photo-3 {
+	background-image: url(https://www.mediafire.com/convkey/8b2c/gesj81e248owejt6g.jpg);
+	background-size: cover;
+	opacity: 0.7;
+	height: 400px;
+}
+
+/* Events */
 
 .concert-date {
 	margin-bottom: -10px;
@@ -43,9 +116,4 @@ li {
 
 .concert-description {
 	margin-bottom: 10%;
-}
-
-#footer {
-    background-color: #c1e7ff;
-    padding: 5%;
 }
