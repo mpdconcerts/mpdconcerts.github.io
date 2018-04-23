@@ -1,5 +1,7 @@
 body {
 	background-color: #AEB6BF;
+	/* background-image: url(); */
+	background-size: cover;
 }
 
 .row {
@@ -92,14 +94,12 @@ a:hover, a:active, a:focus {
 #banner-photo-2 {
 	background-image: url(https://www.mediafire.com/convkey/8f8f/ikmbw025pjs9ml36g.jpg);
 	background-size: cover;
-	opacity: 0.7;
 	height: 400px;
 }
 
 #banner-photo-3 {
 	background-image: url(https://www.mediafire.com/convkey/8b2c/gesj81e248owejt6g.jpg);
 	background-size: cover;
-	opacity: 0.7;
 	height: 400px;
 }
 
