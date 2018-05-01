@@ -1,48 +1,58 @@
 body {
 	background-color: #AEB6BF;
-	/* background-image: url(); */
-	background-size: cover;
 }
 
-.row {
-	margin-bottom: 1em;
+/* text styles */
+/* menu font */
+
+h2 {
+	overflow-wrap: break-word;
+	font-weight: lighter;
 }
+
+/* subtitles */
 
 h3 {
-	color: #ffffff;
-	letter-spacing: 0.3em;
-	overflow-wrap: break-word;
-	margin-bottom: 1em;
+	font-size: large;
+	font-weight: lighter;
+	letter-spacing: 0.5em;
 }
+
+/* subtitles with underline */
+
+h4 {
+	overflow-wrap: break-word;
+	letter-spacing: 0.6em;
+	line-height: 2em;
+	border-bottom: 2px solid;
+
+}
+
+/* footnotes, captions */
 
 h5 {
-	padding: 2em;
+	color: #666666;
+	letter-spacing: 0.7;
+	font-style: italic;
+	font-size: small;
+	padding: 1.5em;
 }
 
-/* p styles */
+/* everything else */
 
-p {
-	line-height: 1.6em;
-}
-
-#patrons {
-	letter-spacing: 0.2em;
-}
-
-
-li {
-	list-style: none;
-	font-weight: bold;
-}
+/* Nav */
 
 .navbar {
-	background-color: rgba(211, 209, 104, 0.3);
+	opacity: 0.9;
+	overflow-wrap: break-word;
+	text-align: center;
 }
 
 /* HOVER elements */
 
 a {
-    color: #000000;
+    color: #666666;
+    font-weight: bolder;
 }
 
 a:hover, a:active, a:focus {
@@ -53,60 +63,132 @@ a:hover, a:active, a:focus {
 /* Icons */
 
 .glyph-icon {
-	width:16px;
-	height:16px;
+	width: 16px;
+	height: 16px;
 }
 
-/* Homepage Boxes */
-
-#tangerine {
-	background-color: rgba(225, 150, 0, 0.7);
-	margin-top: 3.5em;
-	margin-bottom: 2em;
+.music-icon {
+	width: 250px;
+	height: 250px;
+	margin-top: 5em;
+	margin-bottom: 5em;
 }
 
-#grape {
-	background-color: rgba(161, 126, 176, 0.5);
+#logo {
+	width: 70px;
+	height: 70px;
 }
 
-#lime {
-	background-color: rgba(255, 251, 0, 0.5);
-	margin-top: -1em;
+/* Boxes style */
+
+/* Left RGB value darker */
+
+#box-row-2 {
+	border: solid 2px #FFFFFF;
+}
+
+#about {
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 #footer {
-	margin-bottom: -1em;
+	margin-bottom: -2em;
+}
+
+/* Concerts Page */
+
+.tangerine {
+	background-color: rgba(245, 139, 67, 0.3);
+}
+
+.concert-current {
+	padding-top: 8em;
+	margin-right: -1em;
+	padding-right: 4em;
+	margin-left: -1em;
+	padding-left: 4em;
+	padding-bottom: 4em;
+}
+
+#concert-current-preview {
+	margin-bottom: -4em;
+	margin-left: -1em;
+	padding-left: 5em;
+
+}
+
+.concert-content {
+	margin-top: 0.5em;
+	padding-right: 3em;
+	padding-left: 3em;
+}
+
+#membership {
+	margin-top: 8em;
+}
+
+/* colors */
+
+.purple {
+	background-color: rgba(110, 70, 130, 0.5);
+}
+
+#lime {
+	background: linear-gradient(to right, rgba(212, 245, 132, 0.5), rgba(216, 232, 175, 0.5));
+}
+
+#green {
+	background-color: rgba(179, 202, 184, 0.9);
+}
+
+.blue {
+	background-color: rgba(77, 104, 143, 0.6);
+}
+
+#pink {
+	background-color: rgba(207, 122, 174, 0.4);
+}
+
+#mustard {
+	background-color: rgba(194, 154, 76, 0.3);
 }
 
 /* Images */
 
-#logo {
-	padding: 1em;
+.background-photo {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #banner-photo-1 {
 	background-image: url(https://www.mediafire.com/convkey/a9f6/4elewi8hws636mc6g.jpg);
 	background-size: cover;
-	opacity: 0.7;
-	height: 400px;
+	background-repeat: no-repeat;
+	height: 500px;
 }
 
-#banner-photo-2 {
-	background-image: url(https://www.mediafire.com/convkey/8f8f/ikmbw025pjs9ml36g.jpg);
-	background-size: cover;
-	height: 400px;
+#dowland-works {
+	background-image: url(https://www.mediafire.com/convkey/fc31/z17ecig03bjdsz66g.jpg);
 }
 
-#banner-photo-3 {
-	background-image: url(https://www.mediafire.com/convkey/8b2c/gesj81e248owejt6g.jpg);
-	background-size: cover;
-	height: 400px;
+.carousel {
+	padding-top: 2em;
+	margin-left: -1em;
+	margin-right: -1em;
 }
 
-/* Events */
+/* Contact Form */
+
+#contact-form {
+	padding: 4em;
+}
+
+/* Programme Details */
 
 .concert-date {
-	margin-bottom: -10px;
+	padding-top: 2em;
 }
 
 .concert-name {
@@ -114,6 +196,14 @@ a:hover, a:active, a:focus {
 	letter-spacing: 0.2em;
 }
 
-.concert-description {
-	margin-bottom: 10%;
+
+td {
+	vertical-align: top;
+	padding-bottom: 0.8em;
+	padding-right: 1em;
+	font-weight: lighter !important;
+}
+
+li {
+	list-style: none;
 }
