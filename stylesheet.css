@@ -41,7 +41,11 @@ li {
 	letter-spacing: 0.2em;
 }
 
-.concert-description {
+.concert-description-1 {
+	margin-bottom: 2%;
+}
+
+.concert-description-2 {
 	margin-bottom: 10%;
 }
 
