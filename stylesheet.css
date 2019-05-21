@@ -1,21 +1,21 @@
-body {
-	background-color: #AEB6BF;
-}
-
 /* text styles */
 /* menu font */
 
 h2 {
-	overflow-wrap: break-word;
 	font-weight: lighter;
+}
+
+.subtitle {
+	padding: 1em;
 }
 
 /* subtitles */
 
 h3 {
 	font-size: large;
-	font-weight: lighter;
-	letter-spacing: 0.5em;
+	font-weight: bolder;
+	letter-spacing: 0.3em;
+	padding-bottom: 1.5em;
 }
 
 /* subtitles with underline */
@@ -31,11 +31,19 @@ h4 {
 /* footnotes, captions */
 
 h5 {
-	color: #666666;
+	color: #ffffff;
 	letter-spacing: 0.7;
 	font-style: italic;
 	font-size: small;
 	padding: 1.5em;
+}
+
+h5 a {
+	color: #ffffff;
+}
+
+p {
+	padding-bottom: 1.5em;
 }
 
 /* everything else */
@@ -60,6 +68,10 @@ a:hover, a:active, a:focus {
     text-transform: lowercase;
 }
 
+.learn-more {
+	border-bottom: 2px solid #B88FFF;
+}
+
 /* Icons */
 
 .glyph-icon {
@@ -74,6 +86,13 @@ a:hover, a:active, a:focus {
 	margin-bottom: 5em;
 }
 
+.music-icon-small {
+	width: 100px;
+	height: 100px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 #logo {
 	width: 70px;
 	height: 70px;
@@ -81,129 +100,98 @@ a:hover, a:active, a:focus {
 
 /* Boxes style */
 
-/* Left RGB value darker */
 
 #box-row-2 {
 	border: solid 2px #FFFFFF;
 }
 
+.top-row {
+	padding-top: 100px;
+}
+
+/* Index */
+
 #about {
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding: 5em 5em 0em 5em;
 }
 
-#footer {
-	margin-bottom: -2em;
-}
 
-/* Concerts Page */
-
-.tangerine {
-	background-color: rgba(245, 139, 67, 0.3);
-}
-
-.concert-current {
-	padding-top: 8em;
-	margin-right: -1em;
-	padding-right: 4em;
-	margin-left: -1em;
-	padding-left: 4em;
-	padding-bottom: 4em;
-}
-
-#concert-current-preview {
-	margin-bottom: -4em;
-	margin-left: -1em;
-	padding-left: 5em;
-
-}
+/* Concerts */
 
 .concert-content {
-	margin-top: 0.5em;
-	padding-right: 3em;
-	padding-left: 3em;
-}
-
-#membership {
-	margin-top: 8em;
+	padding: 5em;
 }
 
 /* colors */
 
-.purple {
-	background-color: rgba(110, 70, 130, 0.5);
+.black {
+	background-color: #444444;
 }
 
-#lime {
-	background: linear-gradient(to right, rgba(212, 245, 132, 0.5), rgba(216, 232, 175, 0.5));
-}
-
-#green {
-	background-color: rgba(179, 202, 184, 0.9);
-}
-
-.blue {
-	background-color: rgba(77, 104, 143, 0.6);
-}
-
-#pink {
-	background-color: rgba(207, 122, 174, 0.4);
-}
-
-#mustard {
-	background-color: rgba(194, 154, 76, 0.3);
-}
 
 /* Images */
 
-.background-photo {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
-#banner-photo-1 {
+#banner-photo {
 	background-image: url(https://www.mediafire.com/convkey/a9f6/4elewi8hws636mc6g.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 500px;
 }
 
-#dowland-works {
-	background-image: url(https://www.mediafire.com/convkey/fc31/z17ecig03bjdsz66g.jpg);
+.flyer-img {
+	width: 400px;
+	height: auto;
+	padding: 5em;
 }
 
-.carousel {
-	padding-top: 2em;
-	margin-left: -1em;
-	margin-right: -1em;
+.zoom {
+	transition: transform 0.2s;
 }
 
-/* Contact Form */
-
-#contact-form {
-	padding: 4em;
+.zoom:hover {
+    transform: scale(1.5);
 }
+
+
+#content-preview {
+	padding: 5em 5em 5em 5em;
+}
+
+#upcoming-concert-box {
+	padding: 3em 5em 3em 5em;
+}	
 
 /* Programme Details */
 
-.concert-date {
-	padding-top: 2em;
-}
-
-.concert-name {
-	text-decoration: underline;
-	letter-spacing: 0.2em;
-}
-
-
 td {
 	vertical-align: top;
-	padding-bottom: 0.8em;
+	padding-bottom: 1em;
 	padding-right: 1em;
 	font-weight: lighter !important;
 }
 
 li {
 	list-style: none;
+}
+
+/* Search Bar */
+#search-bar {
+	padding-top: 3em;
+}
+
+.btn-search {
+  background: #424242;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1c1c1c;
+}
+.btn-search:link, .btn-search:visited {
+  color: #fff;
+}
+.btn-search:active, .btn-search:hover {
+  background: #1c1c1c;
+  color: #fff;
 }
