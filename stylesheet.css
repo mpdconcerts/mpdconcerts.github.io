@@ -23,6 +23,11 @@ li {
 	font-weight: bold;
 }
 
+img {
+	width: 150px;
+	height: auto;
+}
+
 #patrons {
 	letter-spacing: 0.2em;
 }
