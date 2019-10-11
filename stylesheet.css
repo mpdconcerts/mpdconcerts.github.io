@@ -34,8 +34,8 @@ h5 {
 	color: #ffffff;
 	letter-spacing: 0.7;
 	font-style: italic;
-	font-size: small;
-	padding: 1.5em;
+	font-size: medium;
+	padding: 1em;
 }
 
 h5 a {
@@ -59,18 +59,20 @@ p {
 /* HOVER elements */
 
 a {
-    color: #666666;
+    color: #ffffff;
     font-weight: bolder;
 }
 
 a:hover, a:active, a:focus {
-    color: #000000;
+    color: yellow;
     text-transform: lowercase;
+    text-decoration: none;
 }
 
-.learn-more {
-	border-bottom: 2px solid #B88FFF;
+.button-text {
+	
 }
+
 
 /* Icons */
 
@@ -98,7 +100,7 @@ a:hover, a:active, a:focus {
 	height: 70px;
 }
 
-/* Boxes style */
+/* row style */
 
 
 #box-row-2 {
@@ -109,12 +111,19 @@ a:hover, a:active, a:focus {
 	padding-top: 100px;
 }
 
+#photo-box {
+    background-color: #444444;
+}
+
+.bottom-object {
+    padding-bottom: 13em;
+}
+
 /* Index */
 
 #about {
 	padding: 5em 5em 0em 5em;
 }
-
 
 /* Concerts */
 
@@ -178,6 +187,7 @@ li {
 /* Search Bar */
 #search-bar {
 	padding-top: 3em;
+    padding-bottom: 13em;
 }
 
 .btn-search {
@@ -188,9 +198,11 @@ li {
   border-style: solid;
   border-color: #1c1c1c;
 }
+
 .btn-search:link, .btn-search:visited {
   color: #fff;
 }
+
 .btn-search:active, .btn-search:hover {
   background: #1c1c1c;
   color: #fff;
