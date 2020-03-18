@@ -1,59 +1,213 @@
-body {
-	font-family: Georgia, serif;
-	margin-top: 2em;
-	margin-left:2em;
-	margin-right:2em;
+html,body {
+    height: 115%;
 }
 
-div {
-	margin-top: 3em;
+.col-md-6 {
+    height: 115%;
+}
+
+
+/* menu font */
+h2 {
+	font-size: x-large;
+    padding: 0.3em 0.5em 0 0.3em;
+}
+
+/* concert-name */
+
+h3 {
+	font-size: large;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+	padding: 0 0.5em 1em 0.5em;
+}
+
+/* footer font */
+
+h5 {
+    font-size: medium;
+	color: #ffffff;
+	letter-spacing: 0.7;
+	padding: 1em 1em 0em 1em;
+}
+
+/* photo copyright */
+
+h7 {
+    font-size: medium;
+    padding: 0 0.5em 1em 0.5em;
 }
 
 p {
-	line-height: 1.6em;
+    padding: 0 0.5em 0 0.5em;
+}
+
+a.email {
+    color: #000;
+}
+
+/* wrapping text to be kept together */
+
+span.avoidwrap {
+    display: inline-block;
+}
+
+/* Nav */
+
+.navbar {
+    min-height: 60px;
+	opacity: 0.9;
+	overflow-wrap: break-word;
+	text-align: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* HOVER elements */
+
+a {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+a:hover, a:active, a:focus {
+    color: yellow;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+/* sticky-sidebar */
+
+.sticky-item {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 8em;
+}
+
+/* Icons */
+
+.glyph-icon {
+	width: 32px;
+	height: 32px;
+}
+
+.icon {
+    background-color: #4e73f6;
+}
+
+#logo {
+	width: 2em;
+	height: auto;
+    padding-top: 0em !important;
+}
+
+/* row style */
+
+.top-row {
+	padding-top: 100px;
+}
+
+.bottom-object {
+    padding-bottom: 13em;
+}
+
+
+/* gallery*/
+
+img {
+    padding-top: 0.5em;
+}
+
+#photo-box {
+    margin-bottom: 1em;
+}
+
+/* Index */
+
+#patrons {
+    padding: 2em 1em 1em 1em;
+}
+
+#about {
+	padding-bottom: 3em;
+}
+
+/* Concerts */
+
+.concert-content {
+	padding: 0em 2em 0em 2em;
+}
+
+.flyer-img {
+    width: 300px;
+    height: auto;
+    padding: 1em 0.5em 1em 0.5em;
+}
+
+.zoom {
+    transition: transform 0.2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+#upcoming-concert-box {
+    padding: 3em 5em 3em 5em;
+}   
+
+/* footer */
+
+.footer {
+	background-color: #212529;
+    opacity: 0.8;
+    padding: 1em;
+}
+
+/* Images */
+
+.jumbotron {
+	background-image: url(https://www.mediafire.com/convkey/71a3/3yy7rjawvroe9x06g.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 40vh;
+    margin-top: 60px; /* same as height of navbar */
+    margin-bottom: 0px !important;
+}
+
+#banner-logo {
+    height: 200px;
+    margin-top: 5em;
+}
+
+/* Programme Details */
+
+table {
+    margin-bottom: 0.5em;
 }
 
 td {
-	padding-right: 1em;
 	vertical-align: top;
+    padding: 0 0.5em 0 0.5em;
+	padding-right: 1em;
+	font-weight: lighter !important;
 }
 
 li {
 	list-style: none;
-	font-weight: bold;
 }
 
-img {
-	width: 150px;
+/* Search Bar */
+
+#search {
+    padding: 1em;
 }
 
-#patrons {
-	letter-spacing: 0.2em;
+#search-bar {
+    text-align: center;
+    padding-bottom: 2em;
 }
 
-#contact-address {
-	background-color: #c1e7ff;
-	padding: 5%;
-}
-
-.concert-date {
-	margin-bottom: -10px;
-}
-
-.concert-name {
-	text-decoration: underline;
-	letter-spacing: 0.2em;
-}
-
-.concert-description-1 {
-	margin-bottom: 2%;
-}
-
-.concert-description-2 {
-	margin-bottom: 10%;
-}
-
-#footer {
-    background-color: #c1e7ff;
-    padding: 5%;
+a.search-link {
+    color: #666666;
 }
