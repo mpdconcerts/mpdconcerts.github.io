@@ -1,59 +1,66 @@
-/* text styles */
+html,body {
+    height: 115%;
+}
+
+.col-md-6 {
+    height: 115%;
+}
+
+
 /* menu font */
-
 h2 {
-	font-weight: lighter;
+	font-size: x-large;
+    padding: 0.3em 0.5em 0 0.3em;
 }
 
-.subtitle {
-	padding: 1em;
-}
-
-/* subtitles */
+/* concert-name */
 
 h3 {
 	font-size: large;
 	font-weight: bolder;
-	letter-spacing: 0.3em;
-	padding-bottom: 1.5em;
+	letter-spacing: 0.1em;
+	padding: 0 0.5em 1em 0.5em;
 }
 
-/* subtitles with underline */
-
-h4 {
-	overflow-wrap: break-word;
-	letter-spacing: 0.6em;
-	line-height: 2em;
-	border-bottom: 2px solid;
-
-}
-
-/* footnotes, captions */
+/* footer font */
 
 h5 {
+    font-size: medium;
 	color: #ffffff;
 	letter-spacing: 0.7;
-	font-style: italic;
-	font-size: medium;
-	padding: 1em;
+	padding: 1em 1em 0em 1em;
 }
 
-h5 a {
-	color: #ffffff;
+/* photo copyright */
+
+h7 {
+    font-size: medium;
+    padding: 0 0.5em 1em 0.5em;
 }
 
 p {
-	padding-bottom: 1.5em;
+    padding: 0 0.5em 0 0.5em;
 }
 
-/* everything else */
+a.email {
+    color: #000;
+}
+
+/* wrapping text to be kept together */
+
+span.avoidwrap {
+    display: inline-block;
+}
 
 /* Nav */
 
 .navbar {
+    min-height: 60px;
 	opacity: 0.9;
 	overflow-wrap: break-word;
 	text-align: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 /* HOVER elements */
@@ -69,113 +76,119 @@ a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
-.button-text {
-	
-}
+/* sticky-sidebar */
 
+.sticky-item {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 8em;
+}
 
 /* Icons */
 
 .glyph-icon {
-	width: 16px;
-	height: 16px;
+	width: 32px;
+	height: 32px;
 }
 
-.music-icon {
-	width: 250px;
-	height: 250px;
-	margin-top: 5em;
-	margin-bottom: 5em;
-}
-
-.music-icon-small {
-	width: 100px;
-	height: 100px;
-	margin-top: 1em;
-	margin-bottom: 1em;
+.icon {
+    background-color: #4e73f6;
 }
 
 #logo {
-	width: 70px;
-	height: 70px;
+	width: 2em;
+	height: auto;
+    padding-top: 0em !important;
 }
 
 /* row style */
 
-
-#box-row-2 {
-	border: solid 2px #FFFFFF;
-}
-
 .top-row {
 	padding-top: 100px;
-}
-
-#photo-box {
-    background-color: #444444;
 }
 
 .bottom-object {
     padding-bottom: 13em;
 }
 
+
+/* gallery*/
+
+img {
+    padding-top: 0.5em;
+}
+
+#photo-box {
+    margin-bottom: 1em;
+}
+
 /* Index */
 
+#patrons {
+    padding: 2em 1em 1em 1em;
+}
+
 #about {
-	padding: 5em 5em 0em 5em;
+	padding-bottom: 3em;
 }
 
 /* Concerts */
 
 .concert-content {
-	padding: 5em;
-}
-
-/* colors */
-
-.black {
-	background-color: #444444;
-}
-
-
-/* Images */
-
-
-#banner-photo {
-	background-image: url(https://www.mediafire.com/convkey/a9f6/4elewi8hws636mc6g.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 500px;
+	padding: 0em 2em 0em 2em;
 }
 
 .flyer-img {
-	width: 400px;
-	height: auto;
-	padding: 5em;
+    width: 300px;
+    height: auto;
+    padding: 1em 0.5em 1em 0.5em;
 }
 
 .zoom {
-	transition: transform 0.2s;
+    transition: transform 0.2s;
 }
 
 .zoom:hover {
     transform: scale(1.5);
 }
 
+#upcoming-concert-box {
+    padding: 3em 5em 3em 5em;
+}   
 
-#content-preview {
-	padding: 5em 5em 5em 5em;
+/* footer */
+
+.footer {
+	background-color: #212529;
+    opacity: 0.8;
+    padding: 1em;
 }
 
-#upcoming-concert-box {
-	padding: 3em 5em 3em 5em;
-}	
+/* Images */
+
+.jumbotron {
+	background-image: url(https://www.mediafire.com/convkey/71a3/3yy7rjawvroe9x06g.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 40vh;
+    margin-top: 60px; /* same as height of navbar */
+    margin-bottom: 0px !important;
+}
+
+#banner-logo {
+    height: 200px;
+    margin-top: 5em;
+}
 
 /* Programme Details */
 
+table {
+    margin-bottom: 0.5em;
+}
+
 td {
 	vertical-align: top;
-	padding-bottom: 1em;
+    padding: 0 0.5em 0 0.5em;
 	padding-right: 1em;
 	font-weight: lighter !important;
 }
@@ -185,25 +198,16 @@ li {
 }
 
 /* Search Bar */
+
+#search {
+    padding: 1em;
+}
+
 #search-bar {
-	padding-top: 3em;
-    padding-bottom: 13em;
+    text-align: center;
+    padding-bottom: 2em;
 }
 
-.btn-search {
-  background: #424242;
-  border-radius: 0;
-  color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #1c1c1c;
-}
-
-.btn-search:link, .btn-search:visited {
-  color: #fff;
-}
-
-.btn-search:active, .btn-search:hover {
-  background: #1c1c1c;
-  color: #fff;
+a.search-link {
+    color: #666666;
 }

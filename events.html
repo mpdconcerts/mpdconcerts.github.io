@@ -8,38 +8,61 @@
 		<title>Musicians for Peace and Disarmament</title>
 	</head>
 	<body>
-
-		<div class="event-list">
-			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-			  <a class="navbar-brand" href="#index.html">
-			  	<img src="icons/mpd-logo-square.png" class="d-inline-block align-top rounded" id="logo">
-			  </a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			    <div class="navbar-nav">
-			      <a class="nav-item nav-link" href="/index.html"><h2>Home</h2></a>
-			      <a class="nav-item nav-link active" href="/events.html"><h2>Concert for Peace</h2> <span class="sr-only">(current)</span></a>
-			      <a class="nav-item nav-link" href="/membership.html"><h2>Membership</h2></a>
-                  <a class="nav-item nav-link" href="/funding.html"><h2>Funding</h2></a>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#index.html">
+                <img src="icons/mpd-logo-square.png" class="d-inline-block align-top rounded" id="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="/index.html"><h2>Home</h2></a>
+                  <a class="nav-item nav-link active" href="/events.html"><h2>Concerts for Peace</h2> <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="/membership.html"><h2>Membership</h2></a>
+                  <a class="nav-item nav-link" href="/donate.html"><h2>Donate</h2></a>
+                  <a class="nav-item nav-link" href="/funding.html"><h2>Applications for Funding</h2></a>
                   <a class="nav-item nav-link" href="/photo-gallery.html"><h2>Gallery</h2></a>
-			    </div>
-			  </div>
-			</nav>
+                </div>
+              </div>
+            </nav>
 
+		<div class="container-fluid event-list h-100">
+			
+            <div class="row">
+                <div class="col-md-3 bd-sidebar bg-light">
+                    <div class="sticky-item">
+                        <h2 class="text-center" id="search">Search Past Concerts</h2>
+                        <div id="search-bar">
+                            <input type="text" id="searchInput" onkeyup="eventsSearch()" placeholder="Performer Name or Year">
+                            <ul id="events-listing">
+                                <li><a href="/events.html#151202" class="search-link"><h6>Howard Williams (conductor) &amp; Joy Lisney (cello) <br/>2 December 2015</h6></a></li>
+                                <li><a href="/events.html#160416" class="search-link"><h6>Julian Jacobson (piano) <br/>16 April 2016</h6></a></li>
+                                <li><a href="/events.html#170302" class="search-link"><h6>Susanne Stanzeleit (violin) Celia Waterhouse (violin) Dorothea Vogel (viola) Vanessa Lucas-Smith (cello) Timothy Mason (double bass) Tony Lamb (clarinet) Graham Sheen (bassoon) Susan Dent (horn)<br/>2 March 2017</h6></a></li>
+                                <li><a href="/events.html#170630" class="search-link"><h6>Wissam Boustany (flute) &amp; Aleksander Szram (piano) <br/>30 June 2017</h6></a></li>
+                                <li><a href="/events.html#171006" class="search-link"><h6>Nicky Spence (tenor) &amp; Roger Vignoles (piano) <br/>6 October 2017</h6></a></li>
+                                <li><a href="/events.html#171124" class="search-link"><h6>Jane Glover CBE conducts MPD Chamber Orchestra <br/>24 November 2017</h6></a></li>
+                                <li><a href="/events.html#180222" class="search-link"><h6>Emma Kirkby DBE &amp; Dowland Works <br/>22 February 2018</h6></a></li>
+                                <li><a href="/events.html#181011" class="search-link"><h6>Louise Alder (soprano) &amp; Roger Vignoles (piano) <br/>11 October 2018</h6></a></li>
+                                <li><a href="/events.html#190425" class="search-link"><h6>Jane Glover CBE conducts MPD Chamber Orchestra <br/>25 April 2019</h6></a></li>
+                                <li><a href="/events.html#190712" class="search-link"><h6>Viv McLean (piano) <br/>12 July 2019</h6></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row top-row">
-                <div class="col-md-6 concert-content">
+                <hr/>
+
+                <div class="col-md-6 concert-content h-100">
+                    <h2><br/>About</h2>
+                    <p class="lead"><b>MPD puts on a wide variety of concerts, in a variety of different venues. They have one feature in common: all the musicians taking part give their services to raise funds for the peace movement. Plans for our next concert will be published soon.</b></p>
                     <h2>Past Concerts</h2>
-					<p class="concert-date"><strong>Friday 12th July, 2019, 7pm</strong></p>
-					<p class="concert-venue lead">Hinde Street Methodist Church, 19 Thayer Street, London, W1U 2QJ</p>
+                    <br/>
+					<p class="concert-date" id="190712"><strong>Friday 12th July, 2019</strong></p>
+					<p class="concert-venue lead">Hinde Street Methodist Church Marylebone</p>
 					<h3 class="concert-name"> Piano Recital <b>Viv McLean</b></h3>
 
 					<table>
-						<tr>
-							<td colspan="2"><b>Programme</b></td>
-						</tr>
 						<tr>
 							<td>Beethoven</td>
 							<td>Sonata in C sharp minor, Op.27 No.2, <em>&#34;Moonlight&#34;</em></td>
@@ -56,28 +79,19 @@
                             <td>Gershwin</td>
                             <td><em>Rhapsody in Blue</em></td>
                         </tr>
-						<tr>
+						<!--tr>
 							<td colspan="2"><br/>Booking details will become available nearer the concert. Watch this Space!</td>
-						</tr>
+						</tr-->
 					</table>
-				</div>
-				<div class="col-md-6">
-					<img src="https://www.mediafire.com/convkey/629c/t26rapo8hr7iyzt6g.jpg" class="flyer-img zoom"/>
-				</div>
-			</div>
+                    <img src="https://www.mediafire.com/convkey/629c/t26rapo8hr7iyzt6g.jpg" class="flyer-img zoom"/>
 
-            <hr/>
+                    <hr/>
 
-            <div class="row">
-                <div class="col-md-6 concert-content">
-                    <p class="concert-date"><strong>Thursday 25th April, 2019, 7:30pm</strong></p>
-                    <p class="concert-venue lead">St. James's Church, 197 Piccadilly, London, W1J 9LL</p>
-                    <h3 class="concert-name"> A Chamber Orchestra concert conducted by <b>MPD Patron JANE GLOVER CBE</b></h3>
+                    <p class="concert-date" id="190425"><strong>Thursday 25th April, 2019</strong></p>
+                    <p class="concert-venue lead">St. James's Church Piccadilly</p>
+                    <h3 class="concert-name">A Chamber Orchestra concert conducted by <b>MPD Patron Jane Glover CBE</b></h3>
 
                     <table>
-                        <tr>
-                            <td colspan="2"><b>Programme</b></td>
-                        </tr>
                         <tr>
                             <td>Mozart</td>
                             <td>Serenade in B flat (<em>Gran Partita</em>), K.361</td>
@@ -94,83 +108,59 @@
                             <td colspan="2" class="interval-speaker"><br/>Interval Speaker: <b>Bruce Kent</b> Vice President, Campaign for Nuclear Disarmament</td>
                         </tr>
                     </table>
-                </div>
-                <div class="col-md-6">
                     <img src="https://www.mediafire.com/convkey/6e83/7be244ii5fm3fhh6g.jpg" class="flyer-img zoom"/>
-                </div>    
-            </div>
 
-            <hr/>
-		
-			<div class="row">
-				<div class="col-md-6 concert-content">
-					<p class="concert-date"><strong>Thursday 11th October, 2018, 7:30pm</strong></p>
-					<p class="concert-venue lead">St Philip's Church, Earl's Court Road, London, W8 6QH</p>
-					<h3 class="concert-name">A song recital by <b>Louise Alder (soprano) &amp; Roger Vignoles (piano)</b></h3>
+                    <hr/>
 
-					<table>
-						<tr>
-							<td colspan="2"><b>Programme</b></td>
-						</tr>
-						<tr>
-							<td>Schumann</td>
-							<td><em>Mignon-Lieder</em>, Op.98</td>
-						</tr>
-						<tr>
-							<td colspan="2">songs by Faur&#233;, Bizet and Liszt</td>
-						</tr>
-						<tr>
-							<td>R. Strauss</td>
-							<td><em>Drei Lieder der Ophelia</em>, Op.67 and other songs</td>
-						</tr>
-						<tr>
-							<td>Britten</td>
-							<td><em>On This Island</em>, Op.11</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="interval-speaker"><br/>Interval Speaker: <b>Nicole Treanor</b> UK WILPF (Women's International League for Peace and Freedom)</td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-md-6">
-					<img src="https://www.mediafire.com/convkey/0a96/880g7067flbbgr26g.jpg" class="flyer-img zoom"/>
-				</div>
-			</div>
+                    <p class="concert-date" id="181011"><strong>Thursday 11th October, 2018</strong></p>
+                    <p class="concert-venue lead">St Philip's Church Earl's Court</p>
+                    <h3 class="concert-name">A song recital by <b>Louise Alder (soprano) &amp; MPD Patron Roger Vignoles (piano)</b></h3>
 
-			<hr/>
+                    <table>
+                        <tr>
+                            <td>Schumann</td>
+                            <td><em>Mignon-Lieder</em>, Op.98</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">songs by Faur&#233;, Bizet and Liszt</td>
+                        </tr>
+                        <tr>
+                            <td>R. Strauss</td>
+                            <td><em>Drei Lieder der Ophelia</em>, Op.67 and other songs</td>
+                        </tr>
+                        <tr>
+                            <td>Britten</td>
+                            <td><em>On This Island</em>, Op.11</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="interval-speaker"><br/>Interval Speaker: <b>Nicole Treanor</b> UK WILPF (Women's International League for Peace and Freedom)</td>
+                        </tr>
+                    </table>
+                    <img src="https://www.mediafire.com/convkey/0a96/880g7067flbbgr26g.jpg" class="flyer-img zoom"/>
+                    
+                    <hr/>
 
-			<div class="row">
-				<div class="col-md-6 concert-content">
-					<p class="concert-date"><strong>Thursday 22 February, 2018, 7:30pm</strong></p>
-					<p class="concert-venue lead">Rosslyn Hill Unitarian Chapel, 3 Pilgrims Place, London, NW3 1NG</p>
-					<h3 class="concert-name">A recital by <b>EMMA KIRKBY DBE</b> &amp; members of <b>DOWLAND WORKS</b></h3>
+                    <p class="concert-date" id="180222"><strong>Thursday 22 February, 2018</strong></p>
+                    <p class="concert-venue lead">Rosslyn Hill Unitarian Chapel Hampstead</p>
+                    <h3 class="concert-name">A recital by <b>MPD Patron Emma Kirkby DBE</b> &amp; members of <b>Dowland Works</b></h3>
 
-					<table>
-						<tr>
-							<td><p class="lead interval-speaker">...with works by John Dowland, Henry Purcell, John Wilson, and the brothers William &amp; Henry Lawes<br /></p></td>
-						</tr>
-						<tr>
-							<td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>Martin Bell OBE</b>, journalist</td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-md-6">
-					<img src="https://www.mediafire.com/convkey/b10d/8vh6ttbwugi92cg6g.jpg" class="flyer-img zoom"/>
-				</div>
-			</div>
+                    <table>
+                        <tr>
+                            <td>...with works by John Dowland, Henry Purcell, John Wilson, and the brothers William &amp; Henry Lawes<br /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>Martin Bell OBE</b>, journalist</td>
+                        </tr>
+                    </table>
+                    <img src="https://www.mediafire.com/convkey/b10d/8vh6ttbwugi92cg6g.jpg" class="flyer-img zoom"/>
 
-			<hr/>
+                    <hr />
 
-			<div class="row">
-				<div class="col-md-6 concert-content">
-					<p class="concert-date"><strong>Friday 24 November, 2017, 7:30</strong></p>
-					<p class="concert-venue lead">St. James's Church, 197 Piccadilly, London, W1J 9LL</p>
-					<h3 class="concert-name">A Chamber Orchestra concert conducted by MPD Patron <b>JANE GLOVER CBE</b></h3>
+                    <p class="concert-date" id="171124"><strong>Friday 24 November, 2017</strong></p>
+                    <p class="concert-venue lead">St. James's Church Piccadilly</p>
+                    <h3 class="concert-name">A Chamber Orchestra concert conducted by <b>MPD Patron Jane Glover CBE</b></h3>
 
-					<table>
-						<tr>
-                            <td colspan="2">Programme:</td>
-                         </tr>
+                    <table>
                         <tr>
                             <td>Bach</td>
                             <td>Sinfonia from Cantata BWV 42</td>
@@ -200,27 +190,18 @@
                             </td>
                         </tr>
                         <tr>
-							<td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>JEAN LAMBERT</b>, London Region Green MEP</td>
-						</tr>   
-					</table>
-				</div>
-				<div class="col-md-6">
-					<img src="https://www.mediafire.com/convkey/a118/77npca6a7a7b0wt6g.jpg" class="flyer-img zoom"/>
-				</div>
-			</div>
+                            <td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>Jean Lambert</b>, London Region Green MEP</td>
+                        </tr>   
+                    </table>
+                    <img src="https://www.mediafire.com/convkey/a118/77npca6a7a7b0wt6g.jpg" class="flyer-img zoom"/>
 
-			<hr/>
+                    <hr/>
 
-			<div class="row">
-				<div class="col-md-6 concert-content">
-					<p class="concert-date"><strong>Friday 6th October, 2017, 7pm</strong></p>
-					<p class="concert-venue lead">Hinde Street Methodist Church, 19 Thayer Street, London, W1U 2QJ</p>
-					<h3 class="concert-name">A recital by <b>NICKY SPENCE</b> (tenor) &amp; MPD Patron <b>ROGER VIGNOLES (piano)</b></h3>
+                    <p class="concert-date" id="171006"><strong>Friday 6th October, 2017</strong></p>
+                    <p class="concert-venue lead">Hinde Street Methodist Church Marylebone</p>
+                    <h3 class="concert-name">A recital by <b>Nicky Spence</b> (tenor) &amp; <b>MPD Patron Roger Vignoles(piano)</b></h3>
 
-					<table>
-						<tr>
-                            <td colspan="2">Programme:</td>
-                        </tr>
+                    <table>
                         <tr>
                             <td>Franz Schubert</td>
                             <td>Songs from <em>Schwanengesang</em>, D.957
@@ -237,28 +218,19 @@
                             <td>Richard Strauss</td>
                             <td>Six Songs for Voice and Piano</td>
                         </tr>
-						<tr>
-							<td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>WENDY HORLER</b>, Campaign Against Arms Trade</td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-md-6">
-					<img src="https://www.mediafire.com/convkey/7475/podwy5qmzmgtodo6g.jpg" class="flyer-img zoom"/>
-				</div>
-			</div>
-
-			<hr/>
-
-			<div class="row">
-				<div class="col-md-6 concert-content">
-					<p class="concert-date"><strong>Friday 30 June, 2017, 7pm</strong></p>
-					<p class="concert-venue lead">Hinde Street Methodist Church, 19 Thayer Street, London, W1U 2QJ</p>
-					<h3 class="concert-name">A recital by MPD Patron <b>WISSAM BOUSTANY (flute)</b> &amp; <b>ALEKSANDER SZRAM (piano)</b></h3>
-
-					<table>
-						<tr>
-                            <td colspan="2">Programme:</td>
+                        <tr>
+                            <td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>Wendy Horler</b>, Campaign Against Arms Trade</td>
                         </tr>
+                    </table>
+                    <img src="https://www.mediafire.com/convkey/7475/podwy5qmzmgtodo6g.jpg" class="flyer-img zoom"/>
+
+                    <hr/>
+
+                    <p class="concert-date" id="170630"><strong>Friday 30 June, 2017</strong></p>
+                    <p class="concert-venue lead">Hinde Street Methodist Church Marylebone</p>
+                    <h3 class="concert-name">A recital by <b>MPD Patron Wissam Boustany (flute)</b> &amp; <b>Aleksander Szram (piano)</b></h3>
+
+                    <table>
                         <tr>
                             <td>Johann Nepomuk Hummel</td>
                             <td>Sonata for flute &amp; piano</td>
@@ -279,20 +251,93 @@
                             <td>Cesar Franck</td>
                             <td>Sonata in A major, arr. for flute &amp; piano</td>
                         </tr>
-						<tr>
-							<td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>BRUCE KENT</b>, Vice-President, Campaign for Nuclear Disarmament, Pax Christi &amp; Movement for the Abolition of War</td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-md-6">
-					<img src="https://www.mediafire.com/convkey/e115/jpq678tkvfcjcho6g.jpg" class="flyer-img zoom"/>
-				</div>
-			</div>
+                        <tr>
+                            <td colspan="2" class="interval-speaker"><br />Interval Speaker: <b>BRUCE KENT</b>, Vice-President, Campaign for Nuclear Disarmament, Pax Christi &amp; Movement for the Abolition of War</td>
+                        </tr>
+                    </table>
+                    <img src="https://www.mediafire.com/convkey/e115/jpq678tkvfcjcho6g.jpg" class="flyer-img zoom"/>
 
-			<hr/>
+                    <hr/>
 
-			<div class="row fixed-bottom" id="footer">		
-				<div class="col-md-12 black">
+                    <p class="concert-date" id="170302"><strong>Thursday 2 March, 2017</strong></p>
+                    <p class="concert-venue lead">Hinde Street Methodist Church Marylebone</p>
+                    <h3 class="concert-name">Spring Concert for Peace</h3>
+
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                Susanne Stanzeleit (violin)<br/>Celia Waterhouse (violin)<br/>Dorothea Vogel (viola)<br/>Vanessa Lucas-Smith (cello)<br/>Timothy Mason (double bass)<br/>Tony Lamb (clarinet)<br/>Graham Sheen (bassoon)<br/>Susan Dent (horn)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carl Nielson</td>
+                            <td><em>Serenata. Invano</td>
+                        </tr>
+                        <tr>
+                            <td>Haydn</td>
+                            <td>String Quartet in C major, Op.54 No.2</td>
+                        </tr>
+                        <tr>
+                            <td>Schubert</td>
+                            <td>Octet in F major, D.803</td>
+                        </tr>
+                    </table>
+                    <br/>                  
+
+                    <hr/>
+
+                    <p class="concert-date" id="160416"><strong>Saturday 16 April, 2016</strong></p>
+                    <p class="concert-venue lead">St John's Church Waterloo</p>
+                    <h3 class="concert-name">A recital by <b>MPD Patron Julian Jacobson (piano)</b></h3>
+
+                    <table>
+                        <tr>
+                            <td>Beethoven</td>
+                            <td>Sonata in E, Op.109</td>
+                        </tr>
+                        <tr>
+                            <td>Beethoven</td>
+                            <td>Sonata in A flat, Op.110</td>
+                        </tr>
+                        <tr>
+                            <td>Beethoven</td>
+                            <td>Sonata in C minor, Op.111</td>
+                        </tr>
+                    </table>
+                    <br/>
+
+                    <hr/>
+
+                    <p class="concert-date" id="151202"><strong>Wednesday 2 December, 2016</strong></p>
+                    <p class="concert-venue lead">St. James's Church Piccadilly</p>
+                    <h3 class="concert-name">A Chamber Orchestra concert conducted by <b>Howard Williams</b> with <b>Joy Lisney (cello)</b></h3>
+
+                    <table>
+                        <tr>
+                            <td>Wagner</td>
+                            <td>Siegfried Idyll</td>
+                        </tr>
+                        <tr>
+                            <td>Haydn</td>
+                            <td>Cello Concerto No.2 in D major</td>
+                        </tr>
+                        <tr>
+                            <td>Schubert</td>
+                            <td>Symphony No.3 in D major</td>
+                        </tr>
+                    </table>
+                    <br/>
+
+                    <hr/>
+
+                    <p class="lead bottom-object">For information about previous concerts please contact info.mpdconcerts@gmail.com.</p>
+                </div>
+
+                <div class="col-md-3 bg-light"></div>
+            </div>  
+
+			<div class="row">		
+				<div class="col-md-12 footer">
 					<h5 class="text-center">2019 &#169; Musicians for Peace and Disarmament (MPD) | <a href="mailto:info.mpdconcerts@gmail.com"> info.mpdconcerts@gmail.com</a> | Twitter: <a href="https://www.twitter.com/@MPD_Concerts">@MPD_Concerts</a> | Facebook: <a href="https://www.facebook.com/MANA.Concerts/">@MANA.Concerts</a></h5>
 				</div>
 			</div>
@@ -303,4 +348,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="myscripts.js"></script>
 </html>
