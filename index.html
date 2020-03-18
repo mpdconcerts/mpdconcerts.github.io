@@ -8,27 +8,26 @@
 	</head>
 	
 	<body>
-		<div class="container-fluid">
-		<div>
-			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-			  <a class="navbar-brand" href="#index.html">
-			  	<img src="icons/mpd-logo-square.png" class="d-inline-block align-top rounded" id="logo">
-			  </a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			    <div class="navbar-nav">
-			      <a class="nav-item nav-link active" href="/index.html"><h2>Home</h2> <span class="sr-only">(current)</span></a>
-			      <a class="nav-item nav-link" href="/events.html"><h2>Concerts for Peace</h2></a>
-			      <a class="nav-item nav-link" href="/membership.html"><h2>Membership</h2></a>
-			      <a class="nav-item nav-link" href="/donate.html"><h2>Donate</h2></a>
-			      <a class="nav-item nav-link" href="/funding.html"><h2>Applications for Funding</h2></a>
-			      <a class="nav-item nav-link" href="/photo-gallery.html"><h2>Gallery</h2></a>
-			    </div>
-			  </div>
-			</nav>
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#index.html">
+                <img src="icons/mpd-logo-square.png" class="d-inline-block align-top rounded" id="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="/index.html"><h2>Home</h2></a>
+                  <a class="nav-item nav-link active" href="/events.html"><h2>Concerts for Peace</h2> <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="/membership.html"><h2>Membership</h2></a>
+                  <a class="nav-item nav-link" href="/donate.html"><h2>Donate</h2></a>
+                  <a class="nav-item nav-link" href="/funding.html"><h2>Applications for Funding</h2></a>
+                  <a class="nav-item nav-link" href="/photo-gallery.html"><h2>Gallery</h2></a>
+                </div>
+              </div>
+            </nav>
 
+		<div class="container-fluid event-list h-100">
 			<div class="row">
 				<div class="col-md-3 bg-light"></div>
 				<div class="col-md-6 jumbotron jumbotron-fluid">
@@ -76,4 +75,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</html>
