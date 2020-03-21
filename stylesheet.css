@@ -112,10 +112,14 @@ a:hover, a:active, a:focus {
 }
 
 
-/* gallery*/
+/* gallery*/ 
 
 img {
     padding-top: 0.5em;
+}
+
+#home-img {
+    padding-top: 0em;
 }
 
 #photo-box {
@@ -166,18 +170,21 @@ img {
 
 /* Images */
 
-.jumbotron {
+/* .jumbotron {
 	background-image: url(https://www.mediafire.com/convkey/71a3/3yy7rjawvroe9x06g.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 366px;
-    padding-top: 60px; /*same as navbar height */
+    padding-top: 60px; same as navbar height
     margin-bottom: 0px !important;
 }
 
+*/
+
+
 #banner-logo {
     height: 200px;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 /* Programme Details */
