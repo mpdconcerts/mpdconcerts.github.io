@@ -42,9 +42,6 @@ p {
     padding: 0 0.5em 0 0.5em;
 }
 
-a.email {
-    color: #000;
-}
 
 /* wrapping text to be kept together */
 
@@ -66,12 +63,27 @@ span.avoidwrap {
 /* HOVER elements */
 
 a {
-    color: #ffffff;
+    color: purple;
     font-weight: bolder;
 }
 
 a:hover, a:active, a:focus {
-    color: yellow;
+    color: grey;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+a.email {
+    color: #000;
+}
+
+a.form-link {
+    color: #fff;
+    
+}
+
+a:hover.form-link, a:active.form-link, a:focus.form-link {
+    color: #fff;
     text-transform: lowercase;
     text-decoration: none;
 }
@@ -108,7 +120,7 @@ a:hover, a:active, a:focus {
 }
 
 .bottom-object {
-    padding-bottom: 13em;
+    padding-bottom: 10em;
 }
 
 
@@ -119,7 +131,7 @@ img {
 }
 
 #home-img {
-    padding-top: 0em;
+    padding: 0em;
 }
 
 #photo-box {
@@ -165,7 +177,7 @@ img {
 .footer {
 	background-color: #212529;
     opacity: 0.8;
-    padding: 1em;
+    padding: 0;
 }
 
 /* Images */
@@ -217,4 +229,28 @@ li {
 
 a.search-link {
     color: #666666;
+}
+
+
+/* BLOG */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tumblr-title {
+    font-size: x-large;
+    padding: 0.5em 0.5em 0 0.3em;
+    text-decoration: underline;
+}
+
+.tumblr-date {
+    font-style: italic;
+    font-size: 80%;
+    padding: 0em 0em 0.5em 0.6em;
+}
+
+.tumblr-text-post {
+    margin-bottom: 5%;
 }
