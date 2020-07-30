@@ -10,7 +10,7 @@ html,body {
 /* menu font */
 h2 {
 	font-size: x-large;
-    padding: 0.3em 0.5em 0 0.3em;
+    padding: 0.3em 0em 0.5em 0em;
 }
 
 /* concert-name */
@@ -19,7 +19,7 @@ h3 {
 	font-size: large;
 	font-weight: bolder;
 	letter-spacing: 0.1em;
-	padding: 0 0.5em 1em 0.5em;
+	padding: 0 0em 1em 0em;
 }
 
 /* footer font */
@@ -35,11 +35,15 @@ h5 {
 
 h7 {
     font-size: medium;
-    padding: 0 0.5em 1em 0.5em;
+    padding: 0em 0em 1em 0em;
 }
 
 p {
-    padding: 0 0.5em 0 0.5em;
+    padding: 0em;
+}
+
+td {
+    padding: 0em !important;
 }
 
 
@@ -79,7 +83,10 @@ a.email {
 
 a.form-link {
     color: #fff;
-    
+}
+
+a.footer-link {
+    color: #fff;
 }
 
 a:hover.form-link, a:active.form-link, a:focus.form-link {
@@ -150,14 +157,15 @@ img {
 
 /* Concerts */
 
-.concert-content {
-	padding: 0em 2em 0em 2em;
+.main-content {
+	padding: 0em 2.5em 0em 2.5em;
 }
+
 
 .flyer-img {
     width: 300px;
     height: auto;
-    padding: 1em 0.5em 1em 0.5em;
+    padding: 1em 0em 1em 0em;
 }
 
 .zoom {
@@ -168,9 +176,6 @@ img {
     transform: scale(1.5);
 }
 
-#upcoming-concert-box {
-    padding: 3em 5em 3em 5em;
-}   
 
 /* footer */
 
