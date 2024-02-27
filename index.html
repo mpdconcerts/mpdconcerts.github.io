@@ -61,33 +61,34 @@
 
           <div id="upcoming-concert-box">
               
-            <h2>Non-MPD Concert Of Interest</h2>
+            <h2>Dates For Your Diary</h2>
 
-              <p class="concert-date" id="231210"><strong>Sunday 10 December 2023, 5:00pm</strong></p>
-                    <p class="concert-venue lead">Online</p>
-                    <h3 class="concert-name">A Free Christmas Concert By PalMusic UK</b></h3>
+              <p class="concert-date" id="240509"><strong>Thursday 9 May 2024, 7:30pm</strong></p>
+              <p class="concert-venue lead">Lauderdale House, Waterlow Park, Highgate Hill, London N6 5HG (In person event)</p>
+                    <h3 class="concert-name">MPD Concert for Peace</b></h3>
 
                     <table>
                         <tr>
-                            <td colspan="2"><b>A concert programmed in the spirit of peace and hope featuring Ney artist Faris Ishaq, Edward Said National Conservatory of Music alumni Maya Khaldi & Maher AlShafi and ESNCM students.</b></td>
+                            <td colspan="2"><b>MPD Patron Julian Jacobson (piano), MPD Chair Tony Lamb (clarinet) and Friends&#58;</b></td>
                         </tr>
-                    </table>
-                    
-                    <table>
                         <tr>
-                            <td colspan="2">
-                            <p></br><b>Book for free here: <a href="https://www.eventbrite.com/e/a-flame-for-palestine-tickets-771361752767?aff=oddtdtcreator"> https://www.eventbrite.com/e/a-flame-for-palestine-tickets-771361752767?aff=oddtdtcreator</b></a><br/>Make a donation to the <a href="https://cafdonate.cafonline.org/7302#!/DonationDetails%23/DonationDetails">Friends of the Edward Said National Conservatory of Music UK.</a></p>
+                            <td><br/><em>Programme to include works by Les Six.</em><br/><br/>Full details to be announced.</td>
                         </tr>
                     </table>
-                    <img src="https://www.palmusic.org.uk/wp-content/uploads/2023/12/IMG-20231202-WA0014-980x695.jpg" class="flyer-img zoom"/>
 
-          <!--div id="blog">
-            <h2>News</h2>
-            <span class="loading">Loading...</span>
-          </div-->
+                    <img src="" class="flyer-img zoom"/>
+          </div>
+
+          <hr/>
+
+          <div id="blog">
+            <h2>Posts</h2>
+            <span class="loading">Loading...</span>         
+            <a href="/blog.html"> More posts by MPD<br/><br/></a>
+          </div>
           
           </div>
-          </div>
+
 				  <div class="col-lg-3 bg-light"></div>
       </div> 
       
@@ -97,43 +98,45 @@
         </div>
       </div>
 
-		</div>		
+		</div>
+
+    <!--tumblr-->
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+        <script type="text/javascript">
+        function tumblr(resp) {
+          var posts = resp.response.posts;
+          console.log(posts)
+          $('#blog .loading').replaceWith('<ul/>');
+          $ul = $('#blog ul');
+          //$ul.class='tumblr_posts'
+          for (var i=0; i<1; i++) {
+            var p = posts[i];
+            console.log(p)
+            var title = p['title'] || p['post_url'] || null;
+            if (title) {
+              $ul.append('<li class="tumblr-post tumblr-text-post">' + 
+                //'<div class="tumblr-title">'+p['title']+
+                '</div> <div class="tumblr-date">'+p['date']+'</div>'+
+                '<div class="tumblr-body">'+p['body']+
+                '<hr/>'+
+                '<p class="read_more_container">' +
+                //'<a href="'+p['post_url']+'" class="read-more"> More posts by MPD </a>' +
+                '</p> </div> </li>'
+              );
+            }
+          }
+        }
+        </script>
+
+        <script src="https://api.tumblr.com/v2/blog/mpdconcerts/posts/text?api_key=fha9thq5B1OoLStwDFzOprefyeQYdgDXUN3FyQVFdfvOkHPOqz&callback=tumblr&limit=2" type="text/javascript"></script>
+
+    <!--end tumblr-->		
 		
 	</body>
-  <!--tumblr-->
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-
-  <script type="text/javascript">
-  function tumblr(resp) {
-    var posts = resp.response.posts;
-    console.log(posts)
-    $('#blog .loading').replaceWith('<ul/>');
-    $ul = $('#blog ul');
-    //$ul.class='tumblr_posts'
-    for (var i=0; i<posts.length; i++) {
-      var p = posts[i];
-      console.log(p)
-      var title = p['title'] || p['post_url'] || null;
-      if (title) {
-        $ul.append('<li class="tumblr-post tumblr-text-post">' + 
-          //'<div class="tumblr-title">'+p['title']+
-          '</div> <div class="tumblr-date">'+p['date']+'</div>'+
-          '<div class="tumblr-body">'+p['body']+
-          '<hr/>'+
-          '<p class="read_more_container">' +
-          //'<a href="'+p['post_url']+'" class="read-more"> More posts by MPD </a>' +
-          '</p> </div> </li>'
-        );
-      }
-    }
-  }
-  </script>
-
-  <script src="https://api.tumblr.com/v2/blog/mpdconcerts/posts/text?api_key=fha9thq5B1OoLStwDFzOprefyeQYdgDXUN3FyQVFdfvOkHPOqz&callback=tumblr&limit=2" type="text/javascript"></script>
-  <!--end tumblr-->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
