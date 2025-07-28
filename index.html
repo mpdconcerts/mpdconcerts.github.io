@@ -102,15 +102,68 @@
 
           <hr/>
 
-          <div id="blog">
-            <h2>Posts</h2>
-            <span class="loading">Loading...</span>         
-            <a href="/blog.html"> More posts by MPD<br/><br/></a>
-          </div>
-          
-          </div>
+          <!--Tumblr Code-->
+        
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-                  <div class="col-lg-3 bg-light"></div>
+        <div id="blog"><div class="loading">Loading Tumblr posts...</div></div>
+
+        <script type="text/javascript">
+        function tumblr(resp) {
+          var posts = resp.response.posts;
+          $('#blog').html('<ul></ul>');
+          var $ul = $('#blog ul');
+
+          posts.forEach(function(post) {
+            let content = '';
+            let date = $('<div>').text(post.date).html();
+            let postUrl = post.post_url;
+
+            if (post.type === 'text') {
+              content += '<div class="tumblr-body">' + post.body + '</div>';
+            } else if (post.type === 'photo') {
+              if (post.photos && post.photos.length > 0) {
+                post.photos.forEach(function(photo) {
+                  content += '<img src="' + photo.original_size.url + '" alt="" style="max-width:100%; margin-bottom:10px;" />';
+                });
+              }
+              if (post.caption) {
+                content += '<div class="tumblr-caption">' + post.caption + '</div>';
+              }
+            }
+
+            $ul.append(
+              '<li class="tumblr-post tumblr-' + post.type + '-post">' +
+                '<div class="tumblr-date">' + date + '</div>' +
+                content +
+                '<p class="read_more_container">' +
+                //'<a href="' + postUrl + '" class="read-more" target="_blank" rel="noopener noreferrer">Read more on Tumblr</a>' +
+                '<a href="/blog.html" class="read-more" target="_blank" rel="noopener noreferrer">Read more posts on our Blog</a>' +
+                '</p></li>'
+            );
+          });
+        }
+
+        $(function() {
+          $.ajax({
+            url: 'https://api.tumblr.com/v2/blog/mpdconcerts/posts',
+            data: {
+              api_key: 'fha9thq5B1OoLStwDFzOprefyeQYdgDXUN3FyQVFdfvOkHPOqz',
+              limit: 2
+            },
+            dataType: 'jsonp',
+            jsonpCallback: 'tumblr',
+            success: tumblr,
+            error: function(err) {
+              console.error('Tumblr API error:', err);
+              $('#blog').text('Could not load Tumblr posts.');
+            }
+          });
+        });
+        </script>
+        <!--End of Tumblr Code-->
+
+        <div class="col-lg-3 bg-light"></div>
       </div> 
 
 		</div>
@@ -121,41 +174,7 @@
         </div>
   </div>
 
-    <!--tumblr-->
-
-        <!--script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-
-        <script type="text/javascript">
-        function tumblr(resp) {
-          var posts = resp.response.posts;
-          console.log(posts)
-          $('#blog .loading').replaceWith('<ul/>');
-          $ul = $('#blog ul');
-          //$ul.class='tumblr_posts'
-          for (var i=0; i<1; i++) {
-            var p = posts[i];
-            console.log(p)
-            var title = p['title'] || p['post_url'] || null;
-            if (title) {
-              $ul.append('<li class="tumblr-post tumblr-text-post">' + 
-                //'<div class="tumblr-title">'+p['title']+
-                '</div> <div class="tumblr-date">'+p['date']+'</div>'+
-                '<div class="tumblr-body">'+p['body']+
-                '<hr/>'+
-                '<p class="read_more_container">' +
-                //'<a href="'+p['post_url']+'" class="read-more"> More posts by MPD </a>' +
-                '</p> </div> </li>'
-              );
-            }
-          }
-        }
-        </script>
-
-        <script src="https://api.tumblr.com/v2/blog/mpdconcerts/posts/text?api_key=fha9thq5B1OoLStwDFzOprefyeQYdgDXUN3FyQVFdfvOkHPOqz&callback=tumblr&limit=2" type="text/javascript"></script-->
-
-    <!--end tumblr-->
+  
 
   </body>
 
