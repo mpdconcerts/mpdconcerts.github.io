@@ -90,64 +90,68 @@
         <script src="https://api.tumblr.com/v2/blog/mpdconcerts/posts/text?api_key=fha9thq5B1OoLStwDFzOprefyeQYdgDXUN3FyQVFdfvOkHPOqz&callback=tumblr&limit=2" type="text/javascript"></script-->
 
         <!--end of Old Tumblr-->
+        
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-<div id="blog"><div class="loading">Loading Tumblr posts...</div></div>
+        <div id="blog"><div class="loading">Loading Tumblr posts...</div></div>
 
-<script type="text/javascript">
-function tumblr(resp) {
-  var posts = resp.response.posts;
-  $('#blog').html('<ul></ul>');
-  var $ul = $('#blog ul');
+        <script type="text/javascript">
+        function tumblr(resp) {
+          var posts = resp.response.posts;
+          $('#blog').html('<ul></ul>');
+          var $ul = $('#blog ul');
 
-  posts.forEach(function(post) {
-    let content = '';
-    let date = $('<div>').text(post.date).html();
-    let postUrl = post.post_url;
+          posts.forEach(function(post) {
+            let content = '';
+            let date = $('<div>').text(post.date).html();
+            let postUrl = post.post_url;
 
-    if (post.type === 'text') {
-      content += '<div class="tumblr-body">' + post.body + '</div>';
-    } else if (post.type === 'photo') {
-      if (post.photos && post.photos.length > 0) {
-        post.photos.forEach(function(photo) {
-          content += '<img src="' + photo.original_size.url + '" alt="" style="max-width:100%; margin-bottom:10px;" />';
+            if (post.type === 'text') {
+              content += '<div class="tumblr-body">' + post.body + '</div>';
+            } else if (post.type === 'photo') {
+              if (post.photos && post.photos.length > 0) {
+                post.photos.forEach(function(photo) {
+                  content += '<img src="' + photo.original_size.url + '" alt="" style="max-width:100%; margin-bottom:10px;" />';
+                });
+              }
+              if (post.caption) {
+                content += '<div class="tumblr-caption">' + post.caption + '</div>';
+              }
+            }
+
+            $ul.append(
+              '<li class="tumblr-post tumblr-' + post.type + '-post">' +
+                '<div class="tumblr-date">' + date + '</div>' +
+                content +
+                '<p class="read_more_container">' +
+                '<a href="' + postUrl + '" class="read-more" target="_blank" rel="noopener noreferrer">Read more on Tumblr</a>' +
+                '</p></li>'
+            );
+          });
+        }
+
+        $(function() {
+          $.ajax({
+            url: 'https://api.tumblr.com/v2/blog/mpdconcerts/posts',
+            data: {
+              api_key: 'fha9thq5B1OoLStwDFzOprefyeQYdgDXUN3FyQVFdfvOkHPOqz',
+              limit: 10
+            },
+            dataType: 'jsonp',
+            jsonpCallback: 'tumblr',
+            success: tumblr,
+            error: function(err) {
+              console.error('Tumblr API error:', err);
+              $('#blog').text('Could not load Tumblr posts.');
+            }
+          });
         });
-      }
-      if (post.caption) {
-        content += '<div class="tumblr-caption">' + post.caption + '</div>';
-      }
-    }
+        </script>
 
-    $ul.append(
-      '<li class="tumblr-post tumblr-' + post.type + '-post">' +
-        '<div class="tumblr-date">' + date + '</div>' +
-        content +
-        '<p class="read_more_container">' +
-        '<a href="' + postUrl + '" class="read-more" target="_blank" rel="noopener noreferrer">Read more on Tumblr</a>' +
-        '</p></li>'
-    );
-  });
-}
-
-$(function() {
-  $.ajax({
-    url: 'https://api.tumblr.com/v2/blog/mpdconcerts/posts',
-    data: {
-      api_key: 'fha9thq5B1OoLStwDFzOprefyeQYdgDXUN3FyQVFdfvOkHPOqz',
-      limit: 10
-    },
-    dataType: 'jsonp',
-    jsonpCallback: 'tumblr',
-    success: tumblr,
-    error: function(err) {
-      console.error('Tumblr API error:', err);
-      $('#blog').text('Could not load Tumblr posts.');
-    }
-  });
-});
-</script>
     </body>
+    <!--Old Tumblr Code
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    -->
 </html>
