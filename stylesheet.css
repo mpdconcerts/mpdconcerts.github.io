@@ -64,6 +64,10 @@ span.avoidwrap {
     padding-bottom: 0 !important;
 }
 
+.navbar-nav {
+    background-color: #212529 !important;
+}
+
 /* HOVER elements */
 
 a {
